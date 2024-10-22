@@ -1,0 +1,7 @@
+# Pin versions for reproducibility (NFR-2)
+jupyterlab==4.2.3
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.0
+matplotlib==3.9.0
+boto3==1.34.120
