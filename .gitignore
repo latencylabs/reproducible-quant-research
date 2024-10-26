@@ -11,6 +11,7 @@ crash.log
 *.tfvars.json
 override.tf
 override.tf.json
+*.pem
 *_override.tf
 *_override.tf.json
 .terraform.lock.hcl
