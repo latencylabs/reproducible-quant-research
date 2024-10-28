@@ -20,5 +20,4 @@ EXPOSE 8888
 # Command to run JupyterLab
 # --ip=0.0.0.0 makes it accessible from outside the container
 # --allow-root is necessary to run as the root user inside the container
-# --NotebookApp.token='' and --NotebookApp.password='' disable authentication for simplicity
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root"]

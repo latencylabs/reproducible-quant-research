@@ -11,4 +11,4 @@ usermod -a -G docker ec2-user
 
 # Pull and run the specified JupyterLab container
 # Port 80 on the host is mapped to port 8888 in the container
-docker run -d -p 80:8888 --name jupyterlab ${docker_image_name} start-notebook.sh --NotebookApp.token='${jupyter_token}'
+docker run -d -p 80:8888 --name jupyterlab ${docker_image_name} jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='${jupyter_token}'

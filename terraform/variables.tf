@@ -13,7 +13,7 @@ variable "project_name" {
 variable "docker_image_name" {
   description = "The public Docker Hub image to deploy for JupyterLab."
   type        = string
-  default     = "jupyter/base-notebook:latest"
+  default     = "latencylabs/reproducible-quant-research:latest"
 }
 
 variable "ec2_key_name" {
