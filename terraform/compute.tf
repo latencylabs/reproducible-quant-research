@@ -21,6 +21,7 @@ resource "aws_instance" "jupyter" {
   key_name               = var.ec2_key_name
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.jupyter.id]
+  iam_instance_profile   = aws_iam_instance_profile.jupyter.name
 
   # user_data script to install Docker and run the container on boot
   user_data = templatefile("${path.module}/../scripts/user_data.sh.tpl", {
