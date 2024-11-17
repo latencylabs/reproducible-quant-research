@@ -12,3 +12,8 @@ output "s3_data_bucket_name" {
   description = "The name of the S3 bucket for storing datasets."
   value       = aws_s3_bucket.data.id
 }
+
+output "ec2_key_name" {
+  description = "The name of the EC2 key pair associated with the instance for SSH access."
+  value       = var.ec2_key_name
+}
